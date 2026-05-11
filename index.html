@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مستشفى المجر الكبير الاهلي - رعاية صحية متميزة في محافظة ميسان، العراق. خدمات طبية شاملة على مدار الساعة.">
+  <title>مستشفى المجر الكبير الاهلي | Maysan, Iraq</title>
+
+  <!-- Google Fonts - Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            navy: '#002366',
+            'navy-dark': '#001a4d',
+            teal: '#0d9488',
+            'teal-light': '#14b8a6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <i class="fas fa-hospital"></i>
+        <span>مستشفى المجر الكبير<br>الاهلي</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#departments">الاقسام</a></li>
+        <li><a href="#doctors">الاطباء</a></li>
+        <li><a href="#emergency">الطوارئ</a></li>
+        <li><a href="#testimonials">آراء المرضى</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+        <li><a href="#contact" class="nav-cta">احجز موعد</a></li>
+      </ul>
+
+      <div class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text fade-up">
+        <h1>
+          رعاية صحية <span class="highlight">استثنائية</span>
+          <br>في قلب ميسان
+        </h1>
+        <p>
+          مستشفى المجر الكبير الاهلي يقدم خدمات طبية متكاملة بأحدث التقنيات الطبية
+          وفريق من الاطباء المتخصصين لضمان صحتكم وراحتكم على مدار الساعة.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">
+            <i class="fas fa-calendar-check"></i>
+            احجز موعدك الان
+          </a>
+          <a href="#departments" class="btn-secondary">
+            <i class="fas fa-stethoscope"></i>
+            استكشف خدماتنا
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-up">
+        <div class="hero-card glass">
+          <i class="fas fa-heartbeat"></i>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="number">+15</span>
+              <span class="label">تخصص طبي</span>
+            </div>
+            <div class="stat-item">
+              <span class="number">+50</span>
+              <span class="label">طبيب متخصص</span>
+            </div>
+            <div class="stat-item">
+              <span class="number">24/7</span>
+              <span class="label">خدمة طوارئ</span>
+            </div>
+            <div class="stat-item">
+              <span class="number">+10K</span>
+              <span class="label">مريض سنوياً</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments Section -->
+  <section class="section" id="departments">
+    <div class="section-header fade-up">
+      <h2>اقسامنا الطبية</h2>
+      <div class="section-divider"></div>
+      <p>نقدم مجموعة شاملة من التخصصات الطبية بأعلى معايير الجودة والرعاية</p>
+    </div>
+
+    <div class="departments-grid">
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-heart"></i></div>
+        <h3>قسم القلب والاوعية</h3>
+        <p>تشخيص وعلاج امراض القلب والشرايين بأحدث الاجهزة والتقنيات المتطورة</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-brain"></i></div>
+        <h3>قسم الجراحة العامة</h3>
+        <p>عمليات جراحية متقدمة بإشراف فريق جراحي متخصص وذو خبرة عالية</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-baby"></i></div>
+        <h3>قسم طب الاطفال</h3>
+        <p>رعاية صحية متكاملة للاطفال وحديثي الولادة مع فريق طبي متخصص</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-bone"></i></div>
+        <h3>قسم العظام والمفاصل</h3>
+        <p>علاج الكسور وامراض العظام والمفاصل بأحدث الطرق العلاجية</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-eye"></i></div>
+        <h3>قسم طب العيون</h3>
+        <p>فحوصات شاملة للعيون وعمليات تصحيح النظر بتقنيات الليزر المتقدمة</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-tooth"></i></div>
+        <h3>قسم طب الاسنان</h3>
+        <p>علاج وتجميل الاسنان بأحدث المواد والتقنيات لابتسامة صحية ومشرقة</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-lungs"></i></div>
+        <h3>قسم الباطنية</h3>
+        <p>تشخيص وعلاج الامراض الباطنية بما في ذلك امراض الجهاز الهضمي والتنفسي</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-x-ray"></i></div>
+        <h3>قسم الاشعة والتصوير</h3>
+        <p>خدمات تصوير طبي متقدمة تشمل الرنين المغناطيسي والاشعة المقطعية</p>
+      </div>
+
+      <div class="dept-card glass fade-up">
+        <div class="icon"><i class="fas fa-flask"></i></div>
+        <h3>المختبر والتحليلات</h3>
+        <p>مختبر مجهز بأحدث الاجهزة لإجراء جميع التحليلات المخبرية بدقة عالية</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="section" id="doctors" style="background: rgba(0,35,102,0.2);">
+    <div class="section-header fade-up">
+      <h2>فريقنا الطبي</h2>
+      <div class="section-divider"></div>
+      <p>نخبة من الاطباء المتخصصين ذوي الخبرة والكفاءة العالية</p>
+    </div>
+
+    <div class="doctors-grid">
+      <div class="doctor-card glass fade-up">
+        <div class="doctor-avatar">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <h3>د. احمد محمد علي</h3>
+        <p class="specialty">استشاري جراحة القلب والاوعية</p>
+        <p class="bio">خبرة تزيد عن 20 عاماً في جراحة القلب المفتوح والقسطرة العلاجية</p>
+      </div>
+
+      <div class="doctor-card glass fade-up">
+        <div class="doctor-avatar">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <h3>د. فاطمة حسين كاظم</h3>
+        <p class="specialty">اختصاصية طب الاطفال</p>
+        <p class="bio">متخصصة في طب الاطفال وحديثي الولادة مع خبرة 15 عاماً</p>
+      </div>
+
+      <div class="doctor-card glass fade-up">
+        <div class="doctor-avatar">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <h3>د. علي عبد الكريم</h3>
+        <p class="specialty">استشاري جراحة العظام</p>
+        <p class="bio">متخصص في جراحة العظام والمفاصل الصناعية وإصابات الملاعب</p>
+      </div>
+
+      <div class="doctor-card glass fade-up">
+        <div class="doctor-avatar">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <h3>د. زينب عبد الله</h3>
+        <p class="specialty">اختصاصية النسائية والتوليد</p>
+        <p class="bio">خبيرة في متابعة الحمل والولادة والعمليات النسائية المتقدمة</p>
+      </div>
+
+      <div class="doctor-card glass fade-up">
+        <div class="doctor-avatar">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <h3>د. حسن جاسم محمد</h3>
+        <p class="specialty">اختصاصي الباطنية والجهاز الهضمي</p>
+        <p class="bio">خبرة واسعة في تشخيص وعلاج امراض الجهاز الهضمي والكبد</p>
+      </div>
+
+      <div class="doctor-card glass fade-up">
+        <div class="doctor-avatar">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <h3>د. مريم صالح حميد</h3>
+        <p class="specialty">اختصاصية طب العيون</p>
+        <p class="bio">متخصصة في جراحة العيون وتصحيح النظر بالليزر والليزك</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Section -->
+  <section class="section emergency-section" id="emergency">
+    <div class="emergency-container">
+      <div class="emergency-info fade-up">
+        <h2><i class="fas fa-ambulance"></i> خدمة الطوارئ 24/7</h2>
+        <p>
+          قسم الطوارئ في مستشفى المجر الكبير الاهلي مجهز بأحدث المعدات الطبية
+          وفريق طبي متخصص جاهز لاستقبال جميع الحالات الطارئة على مدار الساعة.
+          لا تتردد في الاتصال بنا في اي وقت.
+        </p>
+        <a href="tel:+9647700000000" class="emergency-phone">
+          <i class="fas fa-phone-alt"></i>
+          <span dir="ltr">+964 770 000 0000</span>
+        </a>
+      </div>
+
+      <div class="emergency-services fade-up">
+        <div class="service-item glass">
+          <i class="fas fa-ambulance"></i>
+          <h4>سيارات اسعاف</h4>
+        </div>
+        <div class="service-item glass">
+          <i class="fas fa-procedures"></i>
+          <h4>غرف عمليات</h4>
+        </div>
+        <div class="service-item glass">
+          <i class="fas fa-heartbeat"></i>
+          <h4>عناية مركزة</h4>
+        </div>
+        <div class="service-item glass">
+          <i class="fas fa-vial"></i>
+          <h4>مختبر طوارئ</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="section-header fade-up">
+      <h2>آراء مرضانا</h2>
+      <div class="section-divider"></div>
+      <p>نفتخر بثقة مرضانا ونسعى دائماً لتقديم افضل رعاية صحية</p>
+    </div>
+
+    <div class="testimonials-container fade-up">
+      <div class="testimonial-track">
+        <div class="testimonial-slide">
+          <div class="testimonial-card glass-strong">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="quote">"تجربة رائعة مع المستشفى. الفريق الطبي محترف جداً والخدمة ممتازة. انصح الجميع بزيارة هذا المستشفى للحصول على افضل رعاية صحية."</p>
+            <p class="author">ابو حسين - ميسان</p>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="testimonial-card glass-strong">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="quote">"اجريت عملية جراحية ناجحة والحمد لله. الاطباء والممرضين كانوا في غاية اللطف والاحترافية. شكراً جزيلاً لكم."</p>
+            <p class="author">ام علي - المجر الكبير</p>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="testimonial-card glass-strong">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="quote">"افضل مستشفى في المنطقة. الاجهزة حديثة والنظافة ممتازة والطاقم الطبي متعاون جداً. بارك الله فيكم على هذه الخدمة المتميزة."</p>
+            <p class="author">حيدر كاظم - العمارة</p>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="testimonial-card glass-strong">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="quote">"رعاية طبية ممتازة لطفلي. قسم الاطفال مجهز بشكل رائع والدكتورة فاطمة كانت ممتازة في التعامل. شكراً من القلب."</p>
+            <p class="author">سارة محمد - ميسان</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-nav">
+        <button class="testimonial-next" aria-label="التالي"><i class="fas fa-chevron-right"></i></button>
+        <button class="testimonial-prev" aria-label="السابق"><i class="fas fa-chevron-left"></i></button>
+      </div>
+
+      <div class="testimonial-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="section" id="contact" style="background: rgba(0,35,102,0.2);">
+    <div class="section-header fade-up">
+      <h2>موقعنا وتواصل معنا</h2>
+      <div class="section-divider"></div>
+      <p>نحن هنا لخدمتكم - تواصلوا معنا في اي وقت</p>
+    </div>
+
+    <div class="contact-container fade-up">
+      <div class="contact-info glass">
+        <h3>معلومات التواصل</h3>
+
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="info">
+            <h4>العنوان</h4>
+            <p>محافظة ميسان - قضاء المجر الكبير<br>الشارع الرئيسي - مقابل حديقة المدينة</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <div class="info">
+            <h4>الهاتف</h4>
+            <p dir="ltr" style="text-align: right;">+964 770 000 0000</p>
+            <p dir="ltr" style="text-align: right;">+964 780 000 0000</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div class="info">
+            <h4>ساعات العمل</h4>
+            <p>العيادات: 8 صباحاً - 10 مساءً</p>
+            <p>الطوارئ: 24 ساعة / 7 ايام</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div class="info">
+            <h4>البريد الالكتروني</h4>
+            <p>info@almajarhospital.iq</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div class="info">
+            <h4>واتساب</h4>
+            <p dir="ltr" style="text-align: right;">+964 770 000 0000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-placeholder fade-up">
+        <i class="fas fa-map-marked-alt"></i>
+        <p>محافظة ميسان - قضاء المجر الكبير</p>
+        <p style="font-size: 0.8rem; opacity: 0.5;">خريطة الموقع</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4><i class="fas fa-hospital"></i> مستشفى المجر الكبير</h4>
+        <p>
+          مستشفى متكامل يقدم خدمات طبية عالية الجودة لسكان محافظة ميسان
+          والمناطق المجاورة بأحدث المعدات وافضل الكوادر الطبية.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <a href="#home">الرئيسية</a>
+        <a href="#departments">الاقسام الطبية</a>
+        <a href="#doctors">الاطباء</a>
+        <a href="#emergency">الطوارئ</a>
+        <a href="#contact">اتصل بنا</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>خدماتنا</h4>
+        <a href="#departments">جراحة القلب</a>
+        <a href="#departments">طب الاطفال</a>
+        <a href="#departments">العظام والمفاصل</a>
+        <a href="#departments">طب العيون</a>
+        <a href="#departments">المختبر</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>تابعونا</h4>
+        <a href="#"><i class="fab fa-facebook"></i> فيسبوك</a>
+        <a href="#"><i class="fab fa-instagram"></i> انستغرام</a>
+        <a href="#"><i class="fab fa-telegram"></i> تيليغرام</a>
+        <a href="#"><i class="fab fa-youtube"></i> يوتيوب</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 مستشفى المجر الكبير الاهلي - جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="العودة للاعلى">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
