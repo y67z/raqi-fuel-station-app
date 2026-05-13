@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#1a0f08" />
+  <meta name="description" content="لحم بعجين البغدادي — أصالة بغدادية على الطريقة التقليدية. توصيل سريع في المجر الكبير." />
+  <meta name="keywords" content="لحم بعجين, البغدادي, المجر الكبير, ميسان, توصيل, مخبوزات, بركر" />
+  <title>لحم بعجين البغدادي | أصالة الطعم البغدادي في المجر الكبير</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='0.5' cy='0.4'%3E%3Cstop offset='0' stop-color='%23f4b942'/%3E%3Cstop offset='0.6' stop-color='%23c8441b'/%3E%3Cstop offset='1' stop-color='%236b1e0a'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='28' fill='url(%23g)' stroke='%23301405' stroke-width='2'/%3E%3Ccircle cx='22' cy='24' r='2' fill='%23301405'/%3E%3Ccircle cx='38' cy='28' r='2.5' fill='%23301405'/%3E%3Ccircle cx='30' cy='38' r='2' fill='%23301405'/%3E%3Ccircle cx='44' cy='40' r='1.8' fill='%23301405'/%3E%3Ccircle cx='18' cy='40' r='1.8' fill='%23301405'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- =============== PRELOADER =============== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-dough">
+        <div class="dough-disc">
+          <span class="seed s1"></span>
+          <span class="seed s2"></span>
+          <span class="seed s3"></span>
+          <span class="seed s4"></span>
+          <span class="seed s5"></span>
+        </div>
+      </div>
+      <div class="preloader-title">
+        <span>ل</span><span>ح</span><span>م</span>
+        <span class="sp"></span>
+        <span>ب</span><span>ع</span><span>ج</span><span>ي</span><span>ن</span>
+        <span class="sp"></span>
+        <span>ا</span><span>ل</span><span>ب</span><span>غ</span><span>د</span><span>ا</span><span>د</span><span>ي</span>
+      </div>
+      <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- =============== SCROLL PROGRESS =============== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- =============== NOISE OVERLAY =============== -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- =============== TOP BAR =============== -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="tb-group">
+        <span class="tb-item"><i class="fas fa-map-marker-alt"></i> المجر الكبير — حي العسكري — قرب عمار المضمد</span>
+      </div>
+      <div class="tb-group">
+        <span class="tb-item"><i class="far fa-clock"></i> مفتوح يومياً من 4 عصراً حتى 12 ليلاً</span>
+        <span class="tb-sep">•</span>
+        <a href="tel:+9647821227177" class="tb-item tb-hot">
+          <i class="fas fa-motorcycle"></i> توصيل: <b dir="ltr">07821 227 177</b>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== NAVBAR =============== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 64 64" width="52" height="52" aria-hidden="true">
+            <defs>
+              <radialGradient id="bgBrand" cx="0.5" cy="0.4">
+                <stop offset="0" stop-color="#f4b942" />
+                <stop offset="0.6" stop-color="#c8441b" />
+                <stop offset="1" stop-color="#6b1e0a" />
+              </radialGradient>
+            </defs>
+            <circle cx="32" cy="32" r="28" fill="url(#bgBrand)" stroke="#2a1409" stroke-width="2" />
+            <circle cx="22" cy="24" r="2" fill="#2a1409" />
+            <circle cx="38" cy="28" r="2.5" fill="#2a1409" />
+            <circle cx="30" cy="38" r="2" fill="#2a1409" />
+            <circle cx="44" cy="40" r="1.8" fill="#2a1409" />
+            <circle cx="18" cy="40" r="1.8" fill="#2a1409" />
+          </svg>
+          <span class="brand-steam s1"></span>
+          <span class="brand-steam s2"></span>
+          <span class="brand-steam s3"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">لحم بعجين <em>البغدادي</em></span>
+          <span class="brand-sub">أصالة الطعم البغدادي الأصيل</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link">عن المطعم</a></li>
+        <li><a href="#menu" class="nav-link">المنيو</a></li>
+        <li><a href="#features" class="nav-link">لماذا نحن</a></li>
+        <li><a href="#gallery" class="nav-link">المعرض</a></li>
+        <li><a href="#contact" class="nav-link">تواصل</a></li>
+        <li>
+          <a href="tel:+9647821227177" class="nav-cta" data-magnetic>
+            <i class="fas fa-phone-volume"></i> اطلب الآن
+          </a>
+        </li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =============== HERO =============== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-vignette"></div>
+      <div class="hero-smoke smoke-1"></div>
+      <div class="hero-smoke smoke-2"></div>
+      <div class="hero-smoke smoke-3"></div>
+      <div class="hero-sparks"></div>
+    </div>
+
+    <div class="hero-wrap">
+      <div class="hero-text">
+        <div class="hero-ribbon reveal">
+          <i class="fas fa-star"></i>
+          <span>الأول في المجر الكبير</span>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <h1 class="hero-title reveal">
+          <span class="h-line-1">طعم <span class="grad-gold">بغداد الأصيل</span></span>
+          <span class="h-line-2">بخبرة <em>الفرن الحجري</em></span>
+        </h1>
+
+        <p class="hero-desc reveal">
+          لحم بعجين طازج يُخبز أمامك على الطريقة البغدادية التقليدية،
+          بعجين مختمر بعناية ولحم عراقي مشكّل بالتوابل الأصيلة.
+          تجربة تعيدك إلى أزقة بغداد العريقة — في قلب المجر الكبير.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#menu" class="btn btn-fire" data-magnetic>
+            <span class="btn-content"><i class="fas fa-utensils"></i> تصفح المنيو</span>
+            <span class="btn-sheen"></span>
+          </a>
+          <a href="tel:+9647821227177" class="btn btn-ghost" data-magnetic>
+            <span class="btn-content"><i class="fas fa-motorcycle"></i> اطلب توصيلاً</span>
+          </a>
+        </div>
+
+        <div class="hero-meta reveal">
+          <div class="meta-item">
+            <i class="fas fa-fire"></i>
+            <div>
+              <strong>فرن حجري</strong>
+              <span>خبز يومي طازج</span>
+            </div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-leaf"></i>
+            <div>
+              <strong>مكونات منتقاة</strong>
+              <span>لحم عراقي طازج</span>
+            </div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-motorcycle"></i>
+            <div>
+              <strong>توصيل سريع</strong>
+              <span>داخل المجر الكبير</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- Main pizza plate -->
+        <div class="plate-wrap" data-tilt>
+          <div class="plate">
+            <div class="pizza">
+              <div class="crust"></div>
+              <div class="topping"></div>
+              <span class="bit b1"></span>
+              <span class="bit b2"></span>
+              <span class="bit b3"></span>
+              <span class="bit b4"></span>
+              <span class="bit b5"></span>
+              <span class="bit b6"></span>
+              <span class="bit b7"></span>
+              <span class="bit b8"></span>
+              <span class="green g1"></span>
+              <span class="green g2"></span>
+              <span class="green g3"></span>
+              <span class="shine"></span>
+            </div>
+          </div>
+          <div class="plate-steam p1"></div>
+          <div class="plate-steam p2"></div>
+          <div class="plate-steam p3"></div>
+        </div>
+
+        <!-- Floating chips -->
+        <div class="chip chip-1">
+          <i class="fas fa-star"></i>
+          <div>
+            <strong>4.9 / 5</strong>
+            <small>تقييم الزبائن</small>
+          </div>
+        </div>
+
+        <div class="chip chip-2">
+          <i class="fas fa-bolt"></i>
+          <div>
+            <strong>20 دقيقة</strong>
+            <small>متوسط التوصيل</small>
+          </div>
+        </div>
+
+        <div class="chip chip-3">
+          <i class="fas fa-award"></i>
+          <div>
+            <strong>+10 سنوات</strong>
+            <small>خبرة في الصنعة</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue">
+      <span>اكتشف أكثر</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- =============== MARQUEE =============== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span><i class="fas fa-fire"></i> فرن حجري أصيل</span>
+      <span><i class="fas fa-wheat-awn"></i> عجين طازج يومي</span>
+      <span><i class="fas fa-pepper-hot"></i> توابل بغدادية</span>
+      <span><i class="fas fa-drumstick-bite"></i> لحم عراقي مختار</span>
+      <span><i class="fas fa-cheese"></i> جبن فاخر</span>
+      <span><i class="fas fa-motorcycle"></i> توصيل سريع</span>
+      <!-- repeat -->
+      <span><i class="fas fa-fire"></i> فرن حجري أصيل</span>
+      <span><i class="fas fa-wheat-awn"></i> عجين طازج يومي</span>
+      <span><i class="fas fa-pepper-hot"></i> توابل بغدادية</span>
+      <span><i class="fas fa-drumstick-bite"></i> لحم عراقي مختار</span>
+      <span><i class="fas fa-cheese"></i> جبن فاخر</span>
+      <span><i class="fas fa-motorcycle"></i> توصيل سريع</span>
+    </div>
+  </div>
+
+  <!-- =============== ABOUT =============== -->
+  <section class="section section-about" id="about">
+    <div class="section-orbs">
+      <div class="orb o-a"></div>
+      <div class="orb o-b"></div>
+    </div>
+
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-card about-card-main" data-tilt>
+            <div class="ac-icon"><i class="fas fa-fire"></i></div>
+            <h3>حكاية الفرن</h3>
+            <p>فرن حجري يعمل على الحطب منذ سنوات، يمنح العجين نكهة الدخان الأصيلة التي لا تجدها إلا عند أهل بغداد.</p>
+          </div>
+          <div class="about-card about-card-side" data-tilt>
+            <div class="ac-icon ac-icon-gold"><i class="fas fa-mortar-pestle"></i></div>
+            <h3>خلطة البهار</h3>
+            <p>توابل بغدادية سرّية تُطحن يومياً.</p>
+          </div>
+          <div class="about-card about-card-side" data-tilt>
+            <div class="ac-icon ac-icon-cream"><i class="fas fa-hand-holding-heart"></i></div>
+            <h3>بلمسة حُب</h3>
+            <p>كل قطعة تُصنع كأنها للعائلة.</p>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="eyebrow"><i class="fas fa-fire"></i> عن لحم بعجين البغدادي</span>
+          <h2>من قلب <span class="grad-gold">بغداد العريقة</span> إلى مائدتك</h2>
+          <div class="divider"></div>
+
+          <p class="lead">
+            في <strong>لحم بعجين البغدادي</strong>، لا نقدّم مجرد طعام — نقدّم <em>حكاية</em>.
+            حكاية بغداد القديمة بطعمها وروائحها وذكريات طفولاتنا الدافئة.
+          </p>
+
+          <p>
+            بدأنا بحلم بسيط: أن نُبقي طعم البغدادي الأصيل حيّاً في قلب المجر الكبير.
+            اليوم، وبعد سنوات من الخبرة، أصبحت رائحة العجين المختمر وبهار اللحم المشوي
+            علامة لكل مارّ في حي العسكري.
+          </p>
+
+          <div class="about-stats">
+            <div class="a-stat">
+              <span class="as-num" data-counter="10" data-suffix="+">0</span>
+              <span class="as-lbl">سنوات خبرة</span>
+            </div>
+            <div class="a-stat">
+              <span class="as-num" data-counter="20" data-suffix="K+">0</span>
+              <span class="as-lbl">زبون سعيد</span>
+            </div>
+            <div class="a-stat">
+              <span class="as-num" data-counter="9" data-suffix=" أنواع">0</span>
+              <span class="as-lbl">من المنيو</span>
+            </div>
+            <div class="a-stat">
+              <span class="as-num">100%</span>
+              <span class="as-lbl">مكونات طازجة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== MENU =============== -->
+  <section class="section section-menu" id="menu">
+    <div class="section-orbs">
+      <div class="orb o-c"></div>
+      <div class="orb o-d"></div>
+    </div>
+
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fas fa-utensils"></i> القائمة</span>
+        <h2>المنيو <span class="grad-gold">الكامل</span></h2>
+        <div class="divider"></div>
+        <p>أسعار منافسة — جودة لا تُضاهى — تحضير لحظي على الفرن الحجري</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="menu-tabs reveal" role="tablist">
+        <button class="menu-tab active" data-tab="all" role="tab"><i class="fas fa-th"></i> الكل</button>
+        <button class="menu-tab" data-tab="classic" role="tab"><i class="fas fa-drumstick-bite"></i> كلاسيكي</button>
+        <button class="menu-tab" data-tab="cheese" role="tab"><i class="fas fa-cheese"></i> بالجبن</button>
+        <button class="menu-tab" data-tab="egg" role="tab"><i class="fas fa-egg"></i> بالبيض</button>
+        <button class="menu-tab" data-tab="burger" role="tab"><i class="fas fa-burger"></i> برگر</button>
+      </div>
+
+      <!-- ====== CLASSIC SECTION ====== -->
+      <div class="menu-category reveal" data-cat="classic">
+        <div class="cat-header">
+          <span class="cat-emoji">🍕</span>
+          <div>
+            <h3>لحم بعجين كلاسيكي</h3>
+            <p>الطبق الأيقوني — عجين طازج ولحم بالتوابل البغدادية</p>
+          </div>
+          <span class="cat-line"></span>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-item" data-tilt data-cat="classic">
+            <div class="mi-badge">الأكثر طلباً</div>
+            <div class="mi-img">
+              <div class="pizza-mini small">
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+                <span class="mini-bit mb3"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>لحم بعجين <span class="size-tag">صغير</span></h4>
+                <span class="mi-price"><span class="price-num">1,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>قطعة فردية مثالية للوجبة الخفيفة — طازج من الفرن.</p>
+              <button class="mi-order" data-name="لحم بعجين صغير" data-price="1000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" data-tilt data-cat="classic">
+            <div class="mi-img">
+              <div class="pizza-mini medium">
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+                <span class="mini-bit mb3"></span>
+                <span class="mini-bit mb4"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>لحم بعجين <span class="size-tag">وسط</span></h4>
+                <span class="mi-price"><span class="price-num">2,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>الحجم المفضل للعائلة — لحم غزير وعجين مخبوز بعناية.</p>
+              <button class="mi-order" data-name="لحم بعجين وسط" data-price="2000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" data-tilt data-cat="classic">
+            <div class="mi-badge mi-badge-gold">القيمة الأعلى</div>
+            <div class="mi-img">
+              <div class="pizza-mini large">
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+                <span class="mini-bit mb3"></span>
+                <span class="mini-bit mb4"></span>
+                <span class="mini-bit mb5"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>لحم بعجين <span class="size-tag">كبير</span></h4>
+                <span class="mi-price"><span class="price-num">3,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>وجبة كاملة — يكفي لشخصين أو أكثر.</p>
+              <button class="mi-order" data-name="لحم بعجين كبير" data-price="3000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ====== CHEESE SECTION ====== -->
+      <div class="menu-category reveal" data-cat="cheese">
+        <div class="cat-header">
+          <span class="cat-emoji">🧀</span>
+          <div>
+            <h3>لحم بعجين بالجبن</h3>
+            <p>كلاسيكنا مع طبقة جبن ذائبة فاخرة</p>
+          </div>
+          <span class="cat-line"></span>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-item" data-tilt data-cat="cheese">
+            <div class="mi-img">
+              <div class="pizza-mini small with-cheese">
+                <span class="cheese-layer"></span>
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>بعجين بالجبن <span class="size-tag">صغير</span></h4>
+                <span class="mi-price"><span class="price-num">2,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>جبن ذائب فاخر فوق لحم البغدادي الأصيل.</p>
+              <button class="mi-order" data-name="لحم بعجين بالجبن صغير" data-price="2000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" data-tilt data-cat="cheese">
+            <div class="mi-badge">الأكثر مبيعاً</div>
+            <div class="mi-img">
+              <div class="pizza-mini medium with-cheese">
+                <span class="cheese-layer"></span>
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+                <span class="mini-bit mb3"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>بعجين بالجبن <span class="size-tag">وسط</span></h4>
+                <span class="mi-price"><span class="price-num">3,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>الاختيار الأكثر شهرة — طبقة جبن ذائبة ولحم غزير.</p>
+              <button class="mi-order" data-name="لحم بعجين بالجبن وسط" data-price="3000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" data-tilt data-cat="cheese">
+            <div class="mi-badge mi-badge-gold">فاخر</div>
+            <div class="mi-img">
+              <div class="pizza-mini large with-cheese">
+                <span class="cheese-layer"></span>
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+                <span class="mini-bit mb3"></span>
+                <span class="mini-bit mb4"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>بعجين بالجبن <span class="size-tag">كبير</span></h4>
+                <span class="mi-price"><span class="price-num">5,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>تجربة ملوكية — وجبة كاملة من الجبن واللحم الأصيل.</p>
+              <button class="mi-order" data-name="لحم بعجين بالجبن كبير" data-price="5000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ====== EGG SECTION ====== -->
+      <div class="menu-category reveal" data-cat="egg">
+        <div class="cat-header">
+          <span class="cat-emoji">🥚</span>
+          <div>
+            <h3>لحم بعجين بالبيض</h3>
+            <p>لمسة شهية فريدة — بيض طازج فوق العجين</p>
+          </div>
+          <span class="cat-line"></span>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-item" data-tilt data-cat="egg">
+            <div class="mi-img">
+              <div class="pizza-mini small with-egg">
+                <span class="egg-yolk"></span>
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>بعجين بالبيض <span class="size-tag">صغير</span></h4>
+                <span class="mi-price"><span class="price-num">1,500</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>نكهة غنية بإضافة بيضة طازجة على الفرن.</p>
+              <button class="mi-order" data-name="لحم بعجين بالبيض صغير" data-price="1500">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" data-tilt data-cat="egg">
+            <div class="mi-img">
+              <div class="pizza-mini medium with-egg">
+                <span class="egg-yolk"></span>
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+                <span class="mini-bit mb3"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>بعجين بالبيض <span class="size-tag">وسط</span></h4>
+                <span class="mi-price"><span class="price-num">2,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>تجربة فطور بغدادية متكاملة.</p>
+              <button class="mi-order" data-name="لحم بعجين بالبيض وسط" data-price="2000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" data-tilt data-cat="egg">
+            <div class="mi-badge mi-badge-gold">للمجموعة</div>
+            <div class="mi-img">
+              <div class="pizza-mini large with-egg">
+                <span class="egg-yolk"></span>
+                <span class="mini-bit mb1"></span>
+                <span class="mini-bit mb2"></span>
+                <span class="mini-bit mb3"></span>
+                <span class="mini-bit mb4"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>بعجين بالبيض <span class="size-tag">كبير</span></h4>
+                <span class="mi-price"><span class="price-num">4,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>وجبة متكاملة للعائلة أو الأصدقاء.</p>
+              <button class="mi-order" data-name="لحم بعجين بالبيض كبير" data-price="4000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ====== BURGER SECTION ====== -->
+      <div class="menu-category reveal" data-cat="burger">
+        <div class="cat-header">
+          <span class="cat-emoji">🍔</span>
+          <div>
+            <h3>البرگر</h3>
+            <p>تجربة جانبية لمحبي البرگر الكلاسيكي</p>
+          </div>
+          <span class="cat-line"></span>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-item" data-tilt data-cat="burger">
+            <div class="mi-badge">جديد</div>
+            <div class="mi-img">
+              <div class="burger-mini">
+                <span class="bun-top"></span>
+                <span class="lettuce"></span>
+                <span class="patty"></span>
+                <span class="bun-bottom"></span>
+              </div>
+            </div>
+            <div class="mi-content">
+              <div class="mi-top">
+                <h4>برگر <span class="size-tag">كلاسيك</span></h4>
+                <span class="mi-price"><span class="price-num">1,000</span><span class="price-cur">د.ع</span></span>
+              </div>
+              <p>قطعة لحم طازجة، خس، طماطم، وصوص البيت — بسعر مميز.</p>
+              <button class="mi-order" data-name="برگر كلاسيك" data-price="1000">
+                <i class="fab fa-whatsapp"></i> اطلب
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Big call to action -->
+      <div class="menu-cta reveal">
+        <div class="menu-cta-inner">
+          <div>
+            <h3>اطلب طلبك جاهزاً على الواتساب</h3>
+            <p>أرسل اختياراتك وسنحضّرها طازجة وجاهزة خلال دقائق</p>
+          </div>
+          <a href="https://wa.me/9647821227177" class="btn btn-fire" data-magnetic>
+            <span class="btn-content"><i class="fab fa-whatsapp"></i> اطلب عبر الواتساب</span>
+            <span class="btn-sheen"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FEATURES =============== -->
+  <section class="section section-features" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fas fa-heart"></i> لماذا نحن</span>
+        <h2>سرّ التميّز <span class="grad-gold">في كل قطعة</span></h2>
+        <div class="divider"></div>
+        <p>أربع قيم نعيش بها كل يوم — لنقدّم لك الطعم الأصيل كما يجب أن يكون</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card reveal" data-tilt>
+          <div class="fc-icon"><i class="fas fa-fire-flame-curved"></i></div>
+          <h3>فرن حجري أصيل</h3>
+          <p>نستخدم الفرن التقليدي على الحطب لنمنح العجين قرمشته ونكهته المميزة.</p>
+          <div class="fc-corner"></div>
+        </article>
+
+        <article class="feature-card reveal" data-tilt>
+          <div class="fc-icon"><i class="fas fa-wheat-awn"></i></div>
+          <h3>عجين طازج يومياً</h3>
+          <p>نُخمّر العجين يومياً بأيدي خبراء ليخرج ذهبياً مقرمشاً من الداخل طرياً.</p>
+          <div class="fc-corner"></div>
+        </article>
+
+        <article class="feature-card reveal" data-tilt>
+          <div class="fc-icon"><i class="fas fa-mortar-pestle"></i></div>
+          <h3>توابل بغدادية</h3>
+          <p>مزيج سرّي من البهارات المطحونة محلياً يمنح اللحم نكهته الأسطورية.</p>
+          <div class="fc-corner"></div>
+        </article>
+
+        <article class="feature-card reveal" data-tilt>
+          <div class="fc-icon"><i class="fas fa-motorcycle"></i></div>
+          <h3>توصيل سريع</h3>
+          <p>نوصل طلبك ساخناً إلى بيتك داخل المجر الكبير — في أسرع وقت ممكن.</p>
+          <div class="fc-corner"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== GALLERY / MOMENTS =============== -->
+  <section class="section section-gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fas fa-camera-retro"></i> من المطبخ</span>
+        <h2>لحظات <span class="grad-gold">شهية</span></h2>
+        <div class="divider"></div>
+        <p>عين على الفرن — لمحات يومية من ورشتنا البغدادية</p>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="gal-item gal-a" data-tilt>
+          <div class="gal-visual gv-oven">
+            <span class="flame f1"></span>
+            <span class="flame f2"></span>
+            <span class="flame f3"></span>
+          </div>
+          <div class="gal-label"><i class="fas fa-fire"></i> الفرن الحجري</div>
+        </div>
+        <div class="gal-item gal-b" data-tilt>
+          <div class="gal-visual gv-dough"></div>
+          <div class="gal-label"><i class="fas fa-wheat-awn"></i> العجين الطازج</div>
+        </div>
+        <div class="gal-item gal-c" data-tilt>
+          <div class="gal-visual gv-spice"></div>
+          <div class="gal-label"><i class="fas fa-mortar-pestle"></i> خلطة التوابل</div>
+        </div>
+        <div class="gal-item gal-d" data-tilt>
+          <div class="gal-visual gv-hot"></div>
+          <div class="gal-label"><i class="fas fa-utensils"></i> جاهز للتقديم</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== TESTIMONIALS =============== -->
+  <section class="section section-testi" id="testimonials">
+    <div class="section-orbs">
+      <div class="orb o-e"></div>
+      <div class="orb o-f"></div>
+    </div>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fas fa-comment-dots"></i> آراء زبائننا</span>
+        <h2>كلمات <span class="grad-gold">أسعدتنا</span></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="testi-wrap reveal">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-slide">
+            <div class="testi-card" data-tilt>
+              <i class="fas fa-quote-right testi-quote"></i>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>«طعم يذكّرني بجدتي في بغداد، لحم بعجين أصيل 100٪ والعجين خرافي، والله ما أكلت أطيب منه في المجر الكبير.»</p>
+              <div class="testi-author">
+                <div class="t-avatar">أ</div>
+                <div>
+                  <strong>أبو محمد</strong>
+                  <span>المجر الكبير</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <div class="testi-card" data-tilt>
+              <i class="fas fa-quote-right testi-quote"></i>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>«أفضل لحم بعجين بالمنطقة بلا مبالغة، الجبن ذائب والعجين مقرمش. التوصيل كان أسرع مما توقعت.»</p>
+              <div class="testi-author">
+                <div class="t-avatar t-av-2">ح</div>
+                <div>
+                  <strong>حيدر كريم</strong>
+                  <span>حي العسكري</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-slide">
+            <div class="testi-card" data-tilt>
+              <i class="fas fa-quote-right testi-quote"></i>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p>«نطلب منهم كل خميس للعائلة، ما قدرنا نبطّل! الأطفال ينتظرون طلبية البغدادي بفارغ الصبر.»</p>
+              <div class="testi-author">
+                <div class="t-avatar t-av-3">ف</div>
+                <div>
+                  <strong>فاطمة هادي</strong>
+                  <span>المجر الكبير</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-controls">
+          <button class="testi-btn testi-next" aria-label="التالي"><i class="fas fa-chevron-right"></i></button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn testi-prev" aria-label="السابق"><i class="fas fa-chevron-left"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CONTACT =============== -->
+  <section class="section section-contact" id="contact">
+    <div class="section-orbs">
+      <div class="orb o-g"></div>
+      <div class="orb o-h"></div>
+    </div>
+
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fas fa-location-dot"></i> زرنا</span>
+        <h2>تعال إلينا <span class="grad-gold">أو اطلب توصيلاً</span></h2>
+        <div class="divider"></div>
+        <p>نحن هنا لاستقبالك — أو نوصّل الطلب لباب بيتك</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal" data-tilt>
+          <h3>معلومات التواصل</h3>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>العنوان</h4>
+              <p>المجر الكبير — حي العسكري<br />قرب عمار المضمد</p>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fas fa-motorcycle"></i></div>
+            <div>
+              <h4>للتوصيل</h4>
+              <p dir="ltr" style="text-align:right"><a href="tel:+9647821227177" class="phone-link">+964 782 122 7177</a></p>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>الواتساب</h4>
+              <p dir="ltr" style="text-align:right"><a href="https://wa.me/9647821227177" class="phone-link">+964 782 122 7177</a></p>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon"><i class="far fa-clock"></i></div>
+            <div>
+              <h4>أوقات العمل</h4>
+              <p>يومياً من 4 عصراً حتى 12 ليلاً</p>
+            </div>
+          </div>
+
+          <div class="c-socials">
+            <a href="https://wa.me/9647821227177" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+9647821227177" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal" data-tilt>
+          <iframe
+            title="موقع المطعم في المجر الكبير"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=46.85%2C31.55%2C46.92%2C31.60&layer=mapnik&marker=31.5667%2C46.88"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-pin">
+            <i class="fas fa-location-dot"></i>
+            <span>المجر الكبير — حي العسكري</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FOOTER =============== -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-col footer-brand">
+        <div class="brand">
+          <div class="brand-mark">
+            <svg viewBox="0 0 64 64" width="46" height="46" aria-hidden="true">
+              <defs>
+                <radialGradient id="ftBrand" cx="0.5" cy="0.4">
+                  <stop offset="0" stop-color="#f4b942" />
+                  <stop offset="0.6" stop-color="#c8441b" />
+                  <stop offset="1" stop-color="#6b1e0a" />
+                </radialGradient>
+              </defs>
+              <circle cx="32" cy="32" r="28" fill="url(#ftBrand)" />
+              <circle cx="22" cy="24" r="2" fill="#2a1409" />
+              <circle cx="38" cy="28" r="2.5" fill="#2a1409" />
+              <circle cx="30" cy="38" r="2" fill="#2a1409" />
+              <circle cx="44" cy="40" r="1.8" fill="#2a1409" />
+              <circle cx="18" cy="40" r="1.8" fill="#2a1409" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">لحم بعجين <em>البغدادي</em></span>
+            <span class="brand-sub">أصالة الطعم البغدادي</span>
+          </div>
+        </div>
+        <p>فرن حجري، عجين طازج، وتوابل بغدادية سرّية — نقدّم لك طعم بغداد الأصيل في قلب المجر الكبير.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عن المطعم</a>
+        <a href="#menu">المنيو</a>
+        <a href="#features">لماذا نحن</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>منيو مختصر</h4>
+        <a href="#menu">لحم بعجين كلاسيكي</a>
+        <a href="#menu">لحم بعجين بالجبن</a>
+        <a href="#menu">لحم بعجين بالبيض</a>
+        <a href="#menu">برگر كلاسيك</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>تواصل</h4>
+        <p><i class="fas fa-location-dot"></i> المجر الكبير — حي العسكري</p>
+        <p><i class="fas fa-motorcycle"></i> <span dir="ltr">+964 782 122 7177</span></p>
+        <p><i class="far fa-clock"></i> 4 عصراً — 12 ليلاً</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2024 لحم بعجين البغدادي — جميع الحقوق محفوظة.</p>
+        <p class="footer-credit">صُنع بـ <i class="fas fa-fire"></i> لأهل المجر الكبير</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/9647821227177" class="float-btn float-whatsapp" aria-label="واتساب">
+    <i class="fab fa-whatsapp"></i>
+    <span class="ripple"></span>
+  </a>
+
+  <a href="tel:+9647821227177" class="float-btn float-call" aria-label="اتصل">
+    <i class="fas fa-phone-volume"></i>
+  </a>
+
+  <button class="float-btn float-top" id="backTop" aria-label="للأعلى">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Order Modal -->
+  <div class="order-modal" id="orderModal" role="dialog" aria-hidden="true">
+    <div class="order-backdrop"></div>
+    <div class="order-dialog">
+      <button class="order-close" id="orderClose" aria-label="إغلاق"><i class="fas fa-xmark"></i></button>
+      <div class="order-icon"><i class="fab fa-whatsapp"></i></div>
+      <h3>تأكيد الطلب</h3>
+      <p>هل تريد إرسال هذا الطلب عبر الواتساب؟</p>
+      <div class="order-detail" id="orderDetail"></div>
+      <div class="order-actions">
+        <a href="#" class="btn btn-fire" id="orderConfirm" target="_blank" rel="noopener">
+          <span class="btn-content"><i class="fab fa-whatsapp"></i> إرسال الطلب</span>
+          <span class="btn-sheen"></span>
+        </a>
+        <button class="btn btn-ghost" id="orderCancel">
+          <span class="btn-content">إلغاء</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
