@@ -1,0 +1,40 @@
+# Render.com Blueprint — deploys the Telegram AI bot as a free Web Service.
+# Free tier: 512MB RAM, sleeps after 15 min of inactivity. Use UptimeRobot to
+# ping the /health endpoint every 5 minutes to keep it warm 24/7.
+#
+# Usage:
+#   1. Push this repo to GitHub.
+#   2. On Render: New + → Blueprint → connect this repo → select this file.
+#   3. Set the BOT_TOKEN, OWNER_CHAT_ID and GEMINI_API_KEY env vars in the dashboard.
+#   4. Deploy.
+services:
+  - type: web
+    name: telegram-ai-bot
+    runtime: docker
+    plan: free
+    region: oregon
+    rootDir: telegram-ai-bot
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: MODE
+        value: polling
+      - key: LOG_LEVEL
+        value: INFO
+      - key: PORT
+        value: 8080
+      - key: MAX_IMAGE_MB
+        value: 20
+      - key: RATE_LIMIT_PER_MINUTE
+        value: 10
+      # The following must be set manually in the Render dashboard (sync: false
+      # tells Render not to manage them via the blueprint):
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_CHAT_ID
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: HF_API_TOKEN
+        sync: false
