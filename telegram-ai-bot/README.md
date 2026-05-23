@@ -26,7 +26,37 @@ A free, professional Telegram bot that edits images with AI and forwards every i
 
 ### خطوات النشر
 
-#### 1. الحصول على المفاتيح المطلوبة
+#### الطريقة الأسرع والأسهل: Hugging Face Spaces (مجاني تماماً، بدون بطاقة) ⭐
+
+1. **إنشاء حساب مجاني** على [huggingface.co](https://huggingface.co/join) (إيميل + كلمة سر).
+2. اضغط **+ New** (يمين فوق) → **Space**.
+3. اعبّي:
+   - **Space name**: `telegram-ai-bot` (أو أي اسم)
+   - **License**: MIT
+   - **SDK**: اختار **Docker** → **Blank**
+   - **Visibility**: Public
+4. اضغط **Create Space**.
+5. افتح تبويب **Files** في الـ Space اللي أنشأته وارفع الملفات التالية من
+   مجلد `telegram-ai-bot/` (ضغط زر **+ Add file → Upload files**):
+   - `bot.py`
+   - `handlers.py`
+   - `ai_service.py`
+   - `config.py`
+   - `i18n.py`
+   - `requirements.txt`
+   - `Dockerfile`
+6. استبدل ملف `README.md` المُنشأ تلقائياً بمحتوى ملف
+   [`HF_SPACE_README.md`](./HF_SPACE_README.md) (الـ YAML في بدايته يخبر الـ Space أي بورت يفتح).
+7. روح **Settings** → **Variables and secrets** → **New secret** وأضف:
+   - `BOT_TOKEN` = توكن البوت من BotFather
+   - `OWNER_CHAT_ID` = معرّف حسابك في تلغرام
+   - `GEMINI_API_KEY` = مفتاح Gemini
+8. الـ Space رح يبنى تلقائياً. استنى لما تشوف **Running** ✅
+9. خلصنا — البوت شغال 24/7 مجاناً ⚡
+
+#### الطريقة الثانية: Render (يطلب بطاقة للتحقق فقط، بدون خصم فعلي)
+
+1. الحصول على المفاتيح المطلوبة
 1. **توكن البوت**: من [@BotFather](https://t.me/BotFather) → `/newbot`.
 2. **معرّف حسابك**: من [@userinfobot](https://t.me/userinfobot) — رقم شكله `7878003028`.
 3. **مفتاح Gemini المجاني**: من [aistudio.google.com/apikey](https://aistudio.google.com/apikey) → Create API Key.
@@ -89,11 +119,45 @@ python bot.py
 | Hosting | Render Free Web Service | 512MB RAM |
 | Keep-alive ping | UptimeRobot | 50 monitors / 5-min interval |
 
-### Deploy
-1. Get your `BOT_TOKEN` from [@BotFather](https://t.me/BotFather), your `OWNER_CHAT_ID` from [@userinfobot](https://t.me/userinfobot), and a free `GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/apikey).
-2. Fork this repo, go to Render → **New + → Blueprint**, pick the repo. Render auto-detects `render.yaml`.
-3. Set the three secret env vars in the Render dashboard, click **Apply**.
-4. Add a free [UptimeRobot](https://uptimerobot.com) HTTP monitor for `https://<your-app>.onrender.com/health` at a 5-minute interval to prevent the free service from sleeping.
+## 🚀 Deployment options
+
+| Platform | Card required? | Free 24/7? | Difficulty |
+|---|---|---|---|
+| **Hugging Face Spaces** | ❌ No | ✅ Yes | ⭐ Easiest |
+| **Render** | ✅ Yes (verify only, no charge) | ⚠️ Sleeps after 15 min | ⭐⭐ Easy |
+| **VPS / Docker host** | depends | ✅ Yes | ⭐⭐⭐ |
+
+### Option A: Deploy to Hugging Face Spaces (recommended, no card)
+
+1. Create a free account at [huggingface.co](https://huggingface.co/join).
+2. Click **+ New** (top right) → **Space**.
+3. Fill in:
+   - **Owner**: your username
+   - **Space name**: `telegram-ai-bot` (or anything)
+   - **License**: MIT
+   - **SDK**: select **Docker** → **Blank**
+   - **Visibility**: Public (free)
+4. Click **Create Space**.
+5. Open the **Files** tab in your new Space and upload these files from this
+   folder (drag-and-drop or **+ Add file → Upload files**):
+   - `bot.py`
+   - `handlers.py`
+   - `ai_service.py`
+   - `config.py`
+   - `i18n.py`
+   - `requirements.txt`
+   - `Dockerfile`
+6. Replace the auto-generated `README.md` in the Space with the contents of
+   [`HF_SPACE_README.md`](./HF_SPACE_README.md) (the YAML frontmatter is what
+   tells the Space which port to expose).
+7. Go to **Settings** → **Variables and secrets** → **New secret** and add:
+   - `BOT_TOKEN` = your bot token
+   - `OWNER_CHAT_ID` = your Telegram user id
+   - `GEMINI_API_KEY` = your Gemini key
+8. The Space rebuilds automatically. Wait until it shows **Running**.
+9. Done — the bot is live 24/7.
+
+### Option B: Deploy to Render
 
 ### Local dev
 ```bash

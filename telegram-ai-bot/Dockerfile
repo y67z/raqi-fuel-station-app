@@ -16,8 +16,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Render and most PaaS providers inject $PORT
-ENV PORT=8080
-EXPOSE 8080
+# Render injects $PORT=10000, Hugging Face Spaces injects $PORT=7860, etc.
+# The bot reads $PORT at runtime, so any platform works.
+ENV PORT=7860
+EXPOSE 7860
 
 CMD ["python", "bot.py"]
